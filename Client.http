@@ -1,0 +1,23 @@
+###
+
+# curl --location --request POST 'http://localhost:8080/apigendoc'
+#--header 'Content-Type: application/json'
+#--data-raw '{
+#"Use": "text_from_use_tag",
+#"Text": "data_from_text_tag",
+#"RecordID": "30"
+#}'
+
+GET http://sycret.ru/service/apigendoc/apigendoc
+Content-Type: application/json
+user-agent: Mozialla -1.0
+{"Use": "text_from_use_tag", "Text": "data_from_text_tag", "RecordID": "30"}
+
+###
+# curl -v -X POST http://localhost:8080/example -H "user-agent: Mozialla -1.0"
+POST http://localhost:8080/example
+user-agent: Mozialla -1.0
+
+###
+
+
